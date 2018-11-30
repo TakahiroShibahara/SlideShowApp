@@ -12,6 +12,11 @@
 		BB73E90221A576DE005D99A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB73E90021A576DE005D99A2 /* Main.storyboard */; };
 		BB73E90421A576DF005D99A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB73E90321A576DF005D99A2 /* Assets.xcassets */; };
 		BB73E90721A576DF005D99A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB73E90521A576DF005D99A2 /* LaunchScreen.storyboard */; };
+		BB73E90F21A577DB005D99A2 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB73E90E21A577DB005D99A2 /* ResultViewController.swift */; };
+		BB73E91421A57B2D005D99A2 /* hagon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BB73E91021A57B2C005D99A2 /* hagon.jpg */; };
+		BB73E91521A57B2D005D99A2 /* gigantes.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BB73E91121A57B2C005D99A2 /* gigantes.jpg */; };
+		BB73E91621A57B2D005D99A2 /* zoma.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BB73E91221A57B2D005D99A2 /* zoma.jpg */; };
+		BB73E91721A57B2D005D99A2 /* killer.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BB73E91321A57B2D005D99A2 /* killer.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		BB73E90321A576DF005D99A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB73E90621A576DF005D99A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BB73E90821A576DF005D99A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB73E90E21A577DB005D99A2 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		BB73E91021A57B2C005D99A2 /* hagon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hagon.jpg; sourceTree = "<group>"; };
+		BB73E91121A57B2C005D99A2 /* gigantes.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gigantes.jpg; sourceTree = "<group>"; };
+		BB73E91221A57B2D005D99A2 /* zoma.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = zoma.jpg; sourceTree = "<group>"; };
+		BB73E91321A57B2D005D99A2 /* killer.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = killer.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +50,10 @@
 			children = (
 				BB73E8FB21A576DE005D99A2 /* SlideShowApp */,
 				BB73E8FA21A576DE005D99A2 /* Products */,
+				BB73E91121A57B2C005D99A2 /* gigantes.jpg */,
+				BB73E91321A57B2D005D99A2 /* killer.jpg */,
+				BB73E91021A57B2C005D99A2 /* hagon.jpg */,
+				BB73E91221A57B2D005D99A2 /* zoma.jpg */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +74,7 @@
 				BB73E90321A576DF005D99A2 /* Assets.xcassets */,
 				BB73E90521A576DF005D99A2 /* LaunchScreen.storyboard */,
 				BB73E90821A576DF005D99A2 /* Info.plist */,
+				BB73E90E21A577DB005D99A2 /* ResultViewController.swift */,
 			);
 			path = SlideShowApp;
 			sourceTree = "<group>";
@@ -123,7 +138,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB73E90721A576DF005D99A2 /* LaunchScreen.storyboard in Resources */,
+				BB73E91421A57B2D005D99A2 /* hagon.jpg in Resources */,
+				BB73E91521A57B2D005D99A2 /* gigantes.jpg in Resources */,
+				BB73E91721A57B2D005D99A2 /* killer.jpg in Resources */,
 				BB73E90421A576DF005D99A2 /* Assets.xcassets in Resources */,
+				BB73E91621A57B2D005D99A2 /* zoma.jpg in Resources */,
 				BB73E90221A576DE005D99A2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,6 +156,7 @@
 			files = (
 				BB73E8FF21A576DE005D99A2 /* ViewController.swift in Sources */,
 				BB73E8FD21A576DE005D99A2 /* AppDelegate.swift in Sources */,
+				BB73E90F21A577DB005D99A2 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
