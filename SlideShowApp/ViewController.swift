@@ -27,13 +27,8 @@ class ViewController: UIViewController, UIScrollViewDelegate {
 
   @IBOutlet weak var forward: UIButton!
   @IBAction func forward(_ sender: Any) {
+    index += 1
     displayImageForward()
-      index += 1
-    if timer == nil {
-      forward.isEnabled = false
-    }else{
-      forward.isEnabled = true
-    }
   }
   func displayImageForward(){
     if index > 3 {
@@ -41,12 +36,11 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     }
     imageView.setImage(UIImage(named: img[index]), for: .normal)
   }
+
   @IBOutlet weak var back: UIButton!
   @IBAction func back(_ sender: Any) {
-    displayImageBack()
     index -= 1
-    if timer == nil {
-    }
+    displayImageBack()
   }
   func displayImageBack(){
     if index < 0 {
@@ -54,6 +48,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     }
     imageView.setImage(UIImage(named: img[index]), for: .normal)
   }
+
   @objc func updateTimer(_ timer: Timer) {
     index += 1
     displayImageForward()
@@ -78,8 +73,10 @@ class ViewController: UIViewController, UIScrollViewDelegate {
   }
 
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    timer!.invalidate()
-    timer = nil
+    if timer !== nil {
+      timer!.invalidate()
+      timer = nil
+    }
     btnPlayPause.setTitle("再生", for :.normal)
     forward.isEnabled = true
     back.isEnabled = true
@@ -87,6 +84,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
 
     resultViewController.largeImage = UIImage(named: img[index])
   }
+
 
   @IBAction func unwind(_ segue: UIStoryboardSegue) {
   }

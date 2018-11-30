@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,48 +19,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lSN-9e-G1Y">
-                                <rect key="frame" x="24" y="614" width="31" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lSN-9e-G1Y">
+                                <rect key="frame" x="33" y="617" width="31" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="戻る"/>
                                 <connections>
                                     <action selector="back:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zeF-Ca-tsm"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KCd-Dd-syl">
-                                <rect key="frame" x="321" y="617" width="31" height="30"/>
+                                <rect key="frame" x="311" y="617" width="31" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="進む"/>
                                 <connections>
                                     <action selector="forward:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F9M-uZ-NrU"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QkN-nn-EcG">
-                                <rect key="frame" x="173" y="617" width="31" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="再生"/>
-                                <connections>
-                                    <action selector="btnPlayPause:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jsr-vU-Haf"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U4y-W4-Lnj">
-                                <rect key="frame" x="0.0" y="165" width="375" height="319"/>
+                                <rect key="frame" x="50" y="100" width="275" height="294"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="319" id="cQ5-Fd-fg4"/>
+                                    <constraint firstAttribute="width" secondItem="U4y-W4-Lnj" secondAttribute="height" multiplier="275:294" id="XMu-Bq-0Kt"/>
                                 </constraints>
                                 <state key="normal" image="gigantes.jpg"/>
                                 <connections>
                                     <segue destination="iop-9j-yTY" kind="show" id="aEi-zN-Jek"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QkN-nn-EcG">
+                                <rect key="frame" x="172" y="617" width="31" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="再生"/>
+                                <connections>
+                                    <action selector="btnPlayPause:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jsr-vU-Haf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="U4y-W4-Lnj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="145" id="EBw-HF-VqG"/>
-                            <constraint firstItem="lSN-9e-G1Y" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="24" id="FVC-br-BPh"/>
-                            <constraint firstAttribute="trailing" secondItem="U4y-W4-Lnj" secondAttribute="trailing" id="TiW-lZ-css"/>
-                            <constraint firstItem="lSN-9e-G1Y" firstAttribute="top" secondItem="U4y-W4-Lnj" secondAttribute="bottom" constant="130" id="hLi-gH-4zS"/>
-                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="lSN-9e-G1Y" secondAttribute="trailing" constant="20" symbolic="YES" id="nlh-Q8-hhC"/>
-                            <constraint firstItem="U4y-W4-Lnj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="rfs-Sf-7Eb"/>
+                            <constraint firstItem="U4y-W4-Lnj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="TkD-Jt-ZRr"/>
+                            <constraint firstItem="U4y-W4-Lnj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="wqS-Y6-yeB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="U4y-W4-Lnj" secondAttribute="trailing" constant="50" id="zpY-AZ-IBN"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -82,20 +81,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Epe-gw-VqV">
-                                <rect key="frame" x="16" y="610" width="31" height="37"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gigantes.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="b1S-Sk-TLa">
+                                <rect key="frame" x="1" y="21" width="373" height="403"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="b1S-Sk-TLa" secondAttribute="height" multiplier="373:403" id="Mne-NZ-uiw"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Epe-gw-VqV">
+                                <rect key="frame" x="33" y="617" width="31" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="戻る"/>
                                 <connections>
                                     <segue destination="Uz0-gl-InR" kind="unwind" unwindAction="unwind:" id="26v-TK-4Mc"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="gigantes.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="b1S-Sk-TLa">
-                                <rect key="frame" x="-32" y="44" width="501" height="456"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Epe-gw-VqV" firstAttribute="top" secondItem="b1S-Sk-TLa" secondAttribute="bottom" constant="130" id="Af4-wO-4b5"/>
+                            <constraint firstItem="b1S-Sk-TLa" firstAttribute="leading" secondItem="dVR-5q-ZEH" secondAttribute="leading" constant="1" id="IGM-NU-I85"/>
+                            <constraint firstItem="b1S-Sk-TLa" firstAttribute="top" secondItem="dVR-5q-ZEH" secondAttribute="top" constant="1" id="aDj-ZF-TZv"/>
+                            <constraint firstItem="dVR-5q-ZEH" firstAttribute="trailing" secondItem="b1S-Sk-TLa" secondAttribute="trailing" constant="1" id="o7R-de-VyX"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dVR-5q-ZEH"/>
                     </view>
