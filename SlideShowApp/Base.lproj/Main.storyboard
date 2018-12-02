@@ -19,17 +19,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lSN-9e-G1Y">
-                                <rect key="frame" x="33" y="617" width="31" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lSN-9e-G1Y">
+                                <rect key="frame" x="10" y="627" width="31" height="30"/>
                                 <state key="normal" title="戻る"/>
                                 <connections>
                                     <action selector="back:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zeF-Ca-tsm"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KCd-Dd-syl">
-                                <rect key="frame" x="311" y="617" width="31" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KCd-Dd-syl">
+                                <rect key="frame" x="334" y="627" width="31" height="30"/>
                                 <state key="normal" title="進む"/>
                                 <connections>
                                     <action selector="forward:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F9M-uZ-NrU"/>
@@ -45,9 +43,8 @@
                                     <segue destination="iop-9j-yTY" kind="show" id="aEi-zN-Jek"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QkN-nn-EcG">
-                                <rect key="frame" x="172" y="617" width="31" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QkN-nn-EcG">
+                                <rect key="frame" x="172" y="627" width="31" height="30"/>
                                 <state key="normal" title="再生"/>
                                 <connections>
                                     <action selector="btnPlayPause:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jsr-vU-Haf"/>
@@ -56,8 +53,14 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KCd-Dd-syl" secondAttribute="trailing" constant="10" id="3Uu-CB-524"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="QkN-nn-EcG" secondAttribute="bottom" constant="10" id="4My-B5-Fga"/>
+                            <constraint firstItem="QkN-nn-EcG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KcH-Ql-SD9"/>
                             <constraint firstItem="U4y-W4-Lnj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="TkD-Jt-ZRr"/>
+                            <constraint firstItem="lSN-9e-G1Y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="VbS-nJ-NWL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="KCd-Dd-syl" secondAttribute="bottom" constant="10" id="oxk-zz-lik"/>
                             <constraint firstItem="U4y-W4-Lnj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="wqS-Y6-yeB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lSN-9e-G1Y" secondAttribute="bottom" constant="10" id="x42-Ir-D1c"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="U4y-W4-Lnj" secondAttribute="trailing" constant="50" id="zpY-AZ-IBN"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -87,9 +90,8 @@
                                     <constraint firstAttribute="width" secondItem="b1S-Sk-TLa" secondAttribute="height" multiplier="373:403" id="Mne-NZ-uiw"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Epe-gw-VqV">
-                                <rect key="frame" x="33" y="617" width="31" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Epe-gw-VqV">
+                                <rect key="frame" x="10" y="627" width="31" height="30"/>
                                 <state key="normal" title="戻る"/>
                                 <connections>
                                     <segue destination="Uz0-gl-InR" kind="unwind" unwindAction="unwind:" id="26v-TK-4Mc"/>
@@ -98,6 +100,8 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="Epe-gw-VqV" firstAttribute="leading" secondItem="dVR-5q-ZEH" secondAttribute="leading" constant="10" id="4KH-66-i3a"/>
+                            <constraint firstItem="dVR-5q-ZEH" firstAttribute="bottom" secondItem="Epe-gw-VqV" secondAttribute="bottom" constant="10" id="ATQ-UU-1hg"/>
                             <constraint firstItem="b1S-Sk-TLa" firstAttribute="leading" secondItem="dVR-5q-ZEH" secondAttribute="leading" constant="1" id="IGM-NU-I85"/>
                             <constraint firstItem="b1S-Sk-TLa" firstAttribute="top" secondItem="dVR-5q-ZEH" secondAttribute="top" constant="1" id="aDj-ZF-TZv"/>
                             <constraint firstItem="dVR-5q-ZEH" firstAttribute="trailing" secondItem="b1S-Sk-TLa" secondAttribute="trailing" constant="1" id="o7R-de-VyX"/>
